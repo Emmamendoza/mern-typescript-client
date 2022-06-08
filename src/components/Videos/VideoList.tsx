@@ -17,7 +17,7 @@ const VideoList = () => {
           updatedAt: video.updatedAt ? new Date(video.updatedAt) : new Date(),
         };
       })
-      .sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime());
+      .sort((video1, video2) => video2.createdAt.getTime() - video1.createdAt.getTime());
 
       setVideos(formatedVideos);
   }
