@@ -8,10 +8,6 @@ import { toast } from "react-toastify";
 
 type InputChange = ChangeEvent<HTMLInputElement | HTMLTextAreaElement>;
 
-interface ParamsType {
-  id: string;
-}
-
 const VideoForm = () => {
 
   const navigate = useNavigate();
@@ -41,7 +37,6 @@ const VideoForm = () => {
       toast.success('Video Updated!');
       setVideo(initialState);
     }
-
 
     navigate('/');
   }
